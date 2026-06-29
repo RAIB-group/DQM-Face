@@ -65,73 +65,14 @@ We provide pre-trained models based on the iResNet-100 backbone trained on the M
 
 ## Installation
 
-The environment was tested with PyTorch on Linux configurations.
+text text text text text text text text text texttext text text text texttext text text text texttext text text text text
 
-1. Clone the repository and install the required dependencies:
-```bash
-git clone https://github.com/RAIB-group/DQM-Face.git
-cd DQM-Face
-pip install -r requirements.txt
-
-2.  Download the MS1MV2 (faces_emore) dataset and place it under the datasets/
-    directory.
-3.  Download the IJB-B and IJB-C evaluation datasets and place them under
-    eval/ijb-testsuite/ijb/.
-
-The final data directory should look something like this:
-
-DQM-Face
-    datasets
-        faces_emore
-    eval
-        ijb-testsuite
-            ijb
-                IJB_release
-    ...
-
-Note: Update all dataset and output paths in configs/ablation_config.py to match
-your local environment before running experiments.
-
-Training
-
-The training code is entirely self-contained. To train the DQM-Face model on
-MS1MV2, use the provided bash scripts located in the scripts/ folder. Choose the
-script that matches your GPU VRAM capacity:
-
-bash scripts/run_train80G.sh  # For 80GB GPUs
-# or
-bash scripts/run_train40G.sh  # For 40GB GPUs
-
-The trained model and TensorBoard logs will be saved automatically in the
-output/ directory.
-
-Evaluation
-
-To evaluate a trained model on the large-scale IJB-B and IJB-C benchmarks,
-navigate to the evaluation scripts:
-
-bash scripts/eval_ijb.sh
-
-Citing
-
-If you use this code, please cite the following paper.
-
-@inproceedings{belabbaci2026dqmface,
-  title={Learning to Attract and Repel: Dual Quality Margin Learning for Face Recognition (DQM-Face)},
-  author={Belabbaci, El Ouanas and Wani, Bhavesh and Terh{\"o}rst, Philipp},
-  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
-  year={2026}
-}
-
-If you make use of the base training pipeline, please additionally cite the
-original InsightFace repository.
-
-Acknowledgement
+## Acknowledgement
 
 This work was funded by the Deutsche Forschungsgemeinschaft (DFG, German
 Research Foundation) under Grant 544631027.
 
-License
+## License
 
 This project is licensed under the terms of the Attribution-NonCommercial 4.0
 International (CC BY-NC 4.0) license. Copyright (c) 2026 Johannes Gutenberg
