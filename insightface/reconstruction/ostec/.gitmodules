@@ -1,3 +1,0 @@
-[submodule "external/deep3dfacerecon"]
-	path = external/deep3dfacerecon
-	url = https://github.com/barisgecer/Deep3DFaceRecon_pytorch
