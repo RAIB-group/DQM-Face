@@ -19,7 +19,7 @@ _Accepted at the European Conference on Computer Vision (ECCV) 2026._
 
 ## Abstract
 
-<img src="assets/fig1.png" height="320" align="right">
+<img src="assets/Fig_ECCV_2026.png" width="400" align="right">
 
 Face recognition systems in unconstrained environments have to deal with extreme variations (such as pose, illumination, and occlusion). To mitigate these effects, existing margin-based approaches model sample quality through feature magnitude. However, magnitude-based modeling alone is susceptible to identity-agnostic noise, which can degrade the reliability and discriminative power of learned representations. 
 
@@ -41,14 +41,23 @@ We provide pre-trained models based on the iResNet-100 backbone trained on the M
 
 <br>
 
-<img src="assets/fig3.png" height="250" align="right">
+<img src="assets/eccv_gradcam.png" width="550" align="right">
 
 **Visual Attribution Analysis (Grad-CAM)** - To provide qualitative insight into the different quality branches, we employ Grad-CAM to visualize the spatial regions that contribute most to the recognition decision. The magnitude-only variant often exhibits attention dispersed toward non-discriminative regions (e.g., background textures) when affected by blur or occlusion. In contrast, our proposed DQM-Face (fused quality, α = 0.5) combines the strengths of both quality cues, exhibiting well-localized and stable activation over the most informative facial regions while remaining robust to challenging imaging conditions.
 
 <br clear="all">
 <br>
 
-<img src="assets/fig2.png" height="280" align="right">
+<table align="right" style="width:450px;">
+  <tr>
+    <td><img src="assets/lfw_evr.png" alt="LFW"></td>
+    <td><img src="assets/adience_evr.png" alt="Adience"></td>
+  </tr>
+  <tr>
+    <td><img src="assets/cplfw_evr.png" alt="CPLFW"></td>
+    <td><img src="assets/xqlfw_evr.png" alt="XQLFW"></td>
+  </tr>
+</table>
 
 **Face Image Quality Assessment (FIQA) Performance** - To measure the effectiveness of the proposed quality estimate utilized for margin learning, we evaluate FIQA performance using Error-vs-Discard (EvD) characteristics. The DQM-Face model demonstrates consistently strong performance, ranking among the top-performing methods across challenging datasets featuring age variations, pose variations, and unconstrained environments. This demonstrates that the learned quality signal is intrinsically aligned with the recognition objective, successfully learning identity-aware quality representations.
 
