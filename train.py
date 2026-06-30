@@ -1,10 +1,3 @@
-"""
-DQM-Face Training Script (Self-Contained)
-================================================
-Official implementation of Dual Quality Margin Learning for Face Recognition.
-Uses TensorBoard via torch.utils.tensorboard.
-"""
-
 import argparse
 import logging
 import os
