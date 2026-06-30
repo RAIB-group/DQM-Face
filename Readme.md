@@ -19,7 +19,7 @@ _Accepted at the European Conference on Computer Vision (ECCV) 2026._
 
 ## Abstract
 
-<img src="assets/fig_marge.png" width="400" align="right">
+<img src="assets/fig_marge.png" width="500" align="right">
 
 Face recognition systems in unconstrained environments have to deal with extreme variations (such as pose, illumination, and occlusion). To mitigate these effects, existing margin-based approaches model sample quality through feature magnitude. However, magnitude-based modeling alone is susceptible to identity-agnostic noise, which can degrade the reliability and discriminative power of learned representations. 
 
