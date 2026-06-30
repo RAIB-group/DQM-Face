@@ -63,9 +63,37 @@ We provide pre-trained models based on the iResNet-100 backbone trained on the M
 
 <br clear="all">
 
-## Installation
+## Face Recognition Model Training
 
-text text text text text text text text text texttext text text text texttext text text text texttext text text text text
+**Training Dataset:** In our paper, we employ the MS1MV2 dataset for training. This dataset can be downloaded from the InsightFace DataZoo (MS1M-ArcFace) via their [official datasets page](https://github.com/deepinsight/insightface/tree/master/recognition/_datasets_). Please ensure you strictly follow their license and distribution guidelines.
+
+1. Download and unzip the dataset, then place it in your local `datasets/` folder.
+2. Update the dataset path in `train.py` to point to this directory.
+3. Run the training script using your preferred bash file (e.g., `bash scripts/run_train80G.sh`).
+
+*Note: All code provided in this repository has been trained and tested using PyTorch 1.7.1.*
+
+## Face Recognition Evaluation
+
+**Evaluation on LFW, AgeDB-30, CPLFW, and CFP-FP:**
+
+You can download the data from their official webpages. 
+*Alternative:* The evaluation datasets are already available in the training dataset package as `.bin` files.
+
+1. Set `config.rec` to your dataset folder (e.g., `datasets/faces_emore`).
+2. Set `config.val_targets` to the list of the evaluation datasets you wish to test.
+3. Download the pre-trained model from the links provided in the table above.
+4. Set `config.output` to the path of the downloaded pre-trained model weights.
+5. Run the evaluation script:
+   ```bash
+   python eval/evaluation.py
+
+   
+## FIQA evaluation
+
+1. text text text text text text text text .
+2. text text text text text text text text .
+3. text text text text text text text text .
 
 ## Acknowledgement
 
