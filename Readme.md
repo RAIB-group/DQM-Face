@@ -41,7 +41,7 @@ We provide pre-trained models based on the iResNet-100 backbone trained on the M
 
 <br>
 
-<img src="assets/eccv_gradcam.png" width="550" align="right">
+<img src="assets/gradcam.png" width="550" align="right">
 
 **Visual Attribution Analysis (Grad-CAM)** - To provide qualitative insight into the different quality branches, we employ Grad-CAM to visualize the spatial regions that contribute most to the recognition decision. The magnitude-only variant often exhibits attention dispersed toward non-discriminative regions (e.g., background textures) when affected by blur or occlusion. In contrast, our proposed DQM-Face (fused quality, α = 0.5) combines the strengths of both quality cues, exhibiting well-localized and stable activation over the most informative facial regions while remaining robust to challenging imaging conditions.
 
