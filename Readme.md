@@ -1,8 +1,6 @@
-# Dual Quality Margin Learning for Face Recognition
+## Learning to Attract and Repel: Dual Quality Margin Learning for Face Recognition (DQM-Face)
 
 _Accepted at the European Conference on Computer Vision (ECCV) 2026._
-
-## DQM-Face: Learning to Attract and Repel: Dual Quality Margin Learning for Face Recognition
 
 * [Research Paper](#) *(Link coming soon)*
 
@@ -31,7 +29,7 @@ The unified integration of semantic quality modeling with dual attraction–repu
 
 ## Results & Models
 
-The proposed approach is analyzed in three steps. First, we provide our pre-trained models. Second, we visually demonstrate how our dual-quality mechanism focuses on identity-preserving features. Third, we evaluate the learned quality for Face Image Quality Assessment (FIQA) to show its effectiveness in rejecting low-utility samples. For comprehensive recognition benchmark tables (IJB-B, IJB-C, LFW, AgeDB, etc.), please refer to our paper.
+The proposed approach is analyzed in three steps. First, we provide our pre-trained models. Second, we visually demonstrate how our dual-quality mechanism focuses on identity-preserving features. Third, we evaluate the learned quality for Face Image Quality Assessment (FIQA) to show its effectiveness in rejecting low-utility samples. For comprehensive recognition benchmark tables, please refer to our paper.
 
 ### Pre-trained Models
 We provide pre-trained models based on the iResNet-100 backbone trained on the MS1MV2 dataset. You can download them here:
@@ -91,9 +89,24 @@ You can download the data from their official webpages.
    
 ## FIQA evaluation
 
-1. text text text text text text text text .
+1. Evaluation on LFW,  Adience, CPLFW, and XQLFW.
 2. text text text text text text text text .
 3. text text text text text text text text .
+
+
+## To-do
+- [ ] Add evaluation script
+
+If you use this code in your work, please cite the following paper:
+
+## Citation
+```bibtex
+@inproceedings{belabbaci2026dqmface,
+    author    = {Belabbaci, El Ouanas and Wani, Bhavesh and Terh{\"{o}}rst, Philipp},
+    title     = {Learning to Attract and Repel: Dual Quality Margin Learning for Face Recognition (DQM-Face)},
+    booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+    year      = {2026}
+}
 
 ## Acknowledgement
 
