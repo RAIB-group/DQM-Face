@@ -86,7 +86,7 @@ You can download the data from their official webpages.
 4. Set `config.output` to the path of the downloaded pre-trained model weights.
 5. Run the evaluation script:
    ```bash
-   python eval/evaluation.py
+   python eval/validate.py
 
    
 ## FIQA evaluation
