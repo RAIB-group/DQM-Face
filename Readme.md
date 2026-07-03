@@ -100,7 +100,7 @@ You can download the data from their official webpages.
 If you use this code in your work, please cite the following paper:
 
 ## Citation
-```bibtex
+
 @inproceedings{belabbaci2026dqmface,
     author    = {Belabbaci, El Ouanas and Wani, Bhavesh and Terh{\"{o}}rst, Philipp},
     title     = {Learning to Attract and Repel: Dual Quality Margin Learning for Face Recognition (DQM-Face)},
