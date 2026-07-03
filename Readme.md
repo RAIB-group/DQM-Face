@@ -94,6 +94,19 @@ You can download the data from their official webpages.
 3. text text text text text text text text .
 
 
+## Acknowledgement
+
+This work was funded by the Deutsche Forschungsgemeinschaft (DFG, German
+Research Foundation) under Grant 544631027.
+
+## License
+
+This project is licensed under the terms of the Attribution-NonCommercial 4.0
+International (CC BY-NC 4.0) license. Copyright (c) 2026 Johannes Gutenberg
+University Mainz (JGU). You are free to use, modify, and redistribute this
+software for non-commercial research purposes, provided appropriate attribution
+is given. Commercial use requires prior permission from the copyright holder.
+
 ## To-do
 - [ ] Add evaluation script
 
@@ -108,16 +121,5 @@ If you use this code in your work, please cite the following paper:
     year      = {2026}
 }
 
-## Acknowledgement
 
-This work was funded by the Deutsche Forschungsgemeinschaft (DFG, German
-Research Foundation) under Grant 544631027.
-
-## License
-
-This project is licensed under the terms of the Attribution-NonCommercial 4.0
-International (CC BY-NC 4.0) license. Copyright (c) 2026 Johannes Gutenberg
-University Mainz (JGU). You are free to use, modify, and redistribute this
-software for non-commercial research purposes, provided appropriate attribution
-is given. Commercial use requires prior permission from the copyright holder.
 
