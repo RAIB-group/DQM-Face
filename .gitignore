@@ -1,0 +1,20 @@
+# Local model/checkpoint artifacts
+*.pt
+*.pth
+*.ckpt
+/inference/model_dqmface_alpha05.pt
+
+# Python cache and environment files
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Notebook and local outputs
+.ipynb_checkpoints/
+*.log
+
+# OS files
+.DS_Store
