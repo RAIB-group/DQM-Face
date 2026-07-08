@@ -52,6 +52,16 @@ Face recognition systems in unconstrained environments have to deal with extreme
 </table>
 
 
+| LFW | Adience |
+|:---:|:---:|
+| ![LFW](assets/lfw_evr.png) | ![Adience](assets/adience_evr.png) |
+| *Figure 1: LFW dataset results* | *Figure 2: Adience dataset results* |
+
+| CPLFW | XQLFW |
+|:---:|:---:|
+| ![CPLFW](assets/cplfw_evr.png) | ![XQLFW](assets/xqlfw_evr.png) |
+| *Figure 3: CPLFW dataset results* | *Figure 4: XQLFW dataset results* |
+
 
 ## Models
 
