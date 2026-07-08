@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT))
 from backbones import get_model
 
-CHECKPOINT_PATH = str(ROOT / "inference" / "model_dqmface_alpha05.pt")
+CHECKPOINT_PATH = str(ROOT / "inference" / "20260123_151957 alpha 0.5" / "checkpoint_gpu_0.pt")
 IMAGE_PATH = str(ROOT / "inference" / "0.jpg")
 SAVE_DIR = str(ROOT / "inference")
 os.makedirs(SAVE_DIR, exist_ok=True)

@@ -23,22 +23,38 @@ Face recognition systems in unconstrained environments have to deal with extreme
 
 <img src="assets/fig_marge.png" width="100%" alt="DQM-Face overview" />
 
-<em>Figure: Geometrical interpretation of feature space and decision boundaries for (a) Softmax baseline with inter-class overlap, (b) ArcFace with a fixed margin $m$, (c) our adaptive attraction margin $m_1$ calibrated by dual-quality fusion, (d) explicit inter-class repulsion $m_2$ pushing non-target features away, and (e) the resulting structured feature space characterized by maximized intra-class compactness and a wide Clearance Zone.</em>
+Figure: Geometrical interpretation of feature space and decision boundaries for (a) Softmax baseline with inter-class overlap, (b) ArcFace with a fixed margin $m$, (c) our adaptive attraction margin $m_1$ calibrated by dual-quality fusion, (d) explicit inter-class repulsion $m_2$ pushing non-target features away, and (e) the resulting structured feature space characterized by maximized intra-class compactness and a wide Clearance Zone.
 
 ## Results
 
-### Face recognition results
+
+### Face Recognition Performance
+
+
+To evaluate the proposed DQM-Face method, we compare its verification performance with state-of-the-art face recognition approaches on standard single-image benchmarks covering unconstrained (LFW), cross-pose (CFP-FP and CPLFW), and cross-age (AgeDB-30) face verification, as well as on the large-scale video-based IJB-B and IJB-C benchmarks. DQM-Face consistently achieves the best or second-best performance across all evaluated benchmarks. However, single-image benchmarks are relatively small in size, and the resulting performance differences are so minor that they cannot be considered statistically significant. Therefore, we additionally evaluate DQM-Face on the substantially larger IJB-B and IJB-C benchmarks, which provide stronger evidence of the proposed DQM-Face method.
+
+
+<p align="center">
+  <img src="assets/FR_results.png" width="550" alt="FR" />
+</p>
+
+
+<p align="center">
+  <img src="assets/FR_results_ijb.png" width="550" alt="FR IJB" />
+</p>
+
+
+<!-- ### Face recognition results
 
 **Visual Attribution Analysis (Grad-CAM)** - To provide qualitative insight into the different quality branches, we employ Grad-CAM to visualize the spatial regions that contribute most to the recognition decision. The magnitude-only variant often exhibits attention dispersed toward non-discriminative regions (e.g., background textures) when affected by blur or occlusion. In contrast, our proposed DQM-Face (fused quality, $\alpha = 0.5$) combines the strengths of both quality cues, exhibiting well-localized and stable activation over the most informative facial regions while remaining robust to challenging imaging conditions.
 
 <p align="center">
   <img src="assets/gradcam.png" width="550" alt="Grad-CAM visualization" />
-</p>
+</p> -->
 
-### FIQA results
+### Face Image Quality Assessment (FIQA) Performance
 
-**Face Image Quality Assessment (FIQA) Performance** - To measure the effectiveness of the proposed quality estimate utilized for margin learning, we evaluate FIQA performance using Error-vs-Discard Characteristics (EDC) and report the False Non-Match Rate (FNMR) at a fixed False Match Rate (FMR) of $10^{-3}$. The DQM-Face model demonstrates consistently strong performance, ranking among the top-performing methods across challenging datasets featuring age variations, pose variations, and unconstrained environments. This demonstrates that the learned quality signal is intrinsically aligned with the recognition objective, successfully learning identity-aware quality representations.
-
+To measure the effectiveness of the proposed quality estimate utilized for margin learning, we evaluate FIQA performance using Error-vs-Discard Characteristics (EDC) and report the False Non-Match Rate (FNMR) at a fixed False Match Rate (FMR) of $10^{-3}$. The DQM-Face model demonstrates consistently strong performance, ranking among the top-performing methods across challenging datasets featuring age variations, pose variations, and unconstrained environments. This demonstrates that the learned quality signal is intrinsically aligned with the recognition objective, successfully learning identity-aware quality representations.
 
 
 

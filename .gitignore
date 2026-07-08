@@ -3,7 +3,9 @@
 *.pth
 *.ckpt
 /inference/model_dqmface_alpha05.pt
+/datasets/
 
+/inference/20260123_151957 alpha 0.5/
 # Python cache and environment files
 __pycache__/
 *.py[cod]
