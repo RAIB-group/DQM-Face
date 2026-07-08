@@ -40,27 +40,18 @@ Face recognition systems in unconstrained environments have to deal with extreme
 **Face Image Quality Assessment (FIQA) Performance** - To measure the effectiveness of the proposed quality estimate utilized for margin learning, we evaluate FIQA performance using Error-vs-Discard Characteristics (EDC) and report the False Non-Match Rate (FNMR) at a fixed False Match Rate (FMR) of $10^{-3}$. The DQM-Face model demonstrates consistently strong performance, ranking among the top-performing methods across challenging datasets featuring age variations, pose variations, and unconstrained environments. This demonstrates that the learned quality signal is intrinsically aligned with the recognition objective, successfully learning identity-aware quality representations.
 
 
-<table align="center" style="width:450px;">
-  <tr>
-    <td><img src="assets/lfw_evr.png" alt="LFW"></td>
-    <td><img src="assets/adience_evr.png" alt="Adience"></td>
-  </tr>
-  <tr>
-    <td><img src="assets/cplfw_evr.png" alt="CPLFW"></td>
-    <td><img src="assets/xqlfw_evr.png" alt="XQLFW"></td>
-  </tr>
-</table>
+
 
 
 | LFW | Adience |
 |:---:|:---:|
 | ![LFW](assets/lfw_evr.png) | ![Adience](assets/adience_evr.png) |
-| *Figure 1: LFW dataset results* | *Figure 2: Adience dataset results* |
+| * Unconstrained* | * Age variations* |
 
 | CPLFW | XQLFW |
 |:---:|:---:|
 | ![CPLFW](assets/cplfw_evr.png) | ![XQLFW](assets/xqlfw_evr.png) |
-| *Figure 3: CPLFW dataset results* | *Figure 4: XQLFW dataset results* |
+| *Pose variations* | *Image quality variations* |
 
 
 ## Models
