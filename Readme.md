@@ -46,7 +46,7 @@ Face recognition systems in unconstrained environments have to deal with extreme
 | LFW | Adience |
 |:---:|:---:|
 | ![LFW](assets/lfw_evr.png) | ![Adience](assets/adience_evr.png) |
-| * Unconstrained* | * Age variations* |
+| *Unconstrained* | *Age variations* |
 
 | CPLFW | XQLFW |
 |:---:|:---:|
