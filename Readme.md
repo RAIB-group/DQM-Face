@@ -58,9 +58,11 @@ Face recognition systems in unconstrained environments have to deal with extreme
 
 We provide pre-trained models based on the iResNet-100 backbone trained on MS1MV2. These models are suitable for both recognition and quality estimation.
 
-- [**DQM-Face (α = 0.5)**](https://drive.google.com/file/d/1V1zmSWtPx7jKI4fQ-LzUPWTIrwjkPrik/view?usp=sharing) - Best overall model with fused magnitude + semantic quality.
-- [**DQM-Face (α = 0.4)**](https://drive.google.com/file/d/1kC_HitTbsHwlIcwfXZ0UAUO7ce3oun3P/view?usp=sharing) - Strong alternative weighting that works especially well on IJB-B and IJB-C.
-- [**DQM-Face qsem (α = 1.0)**](https://drive.google.com/file/d/1aWGbFbMGMAlg9GUYHfOXQ4RvqzPi8HJp/view?usp=sharing) - Semantic-quality-only variant for ablation studies.
+| Model | Trained Model | Checkpoint | Description |
+|:---|:---|:---|:---|
+| **DQM-Face (α = 0.5)** | [Download](https://drive.google.com/file/d/1V1zmSWtPx7jKI4fQ-LzUPWTIrwjkPrik/view?usp=sharing) | [Download](https://drive.google.com/file/) | Best overall model with fused magnitude + semantic quality. |
+| **DQM-Face (α = 0.4)** | [Download](https://drive.google.com/file/d/1kC_HitTbsHwlIcwfXZ0UAUO7ce3oun3P/view?usp=sharing) | [Download](https://drive.google.com/file/) | Strong alternative weighting that works especially well on IJB-B and IJB-C. |
+| **DQM-Face qsem (α = 1.0)** | [Download](https://drive.google.com/file/d/1aWGbFbMGMAlg9GUYHfOXQ4RvqzPi8HJp/view?usp=sharing) | [Download](https://drive.google.com/file/d/) | Semantic-quality-only variant for ablation studies. |
 
 
 ## Compute Embeddings
