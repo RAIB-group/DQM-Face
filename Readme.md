@@ -2,7 +2,7 @@
 
 _Accepted at the European Conference on Computer Vision (ECCV) 2026._
 
-* [Research Paper](#) *(Link coming soon)*
+* [Research Paper](https://arxiv.org/abs/2609.02644)
 
 ## Table of Contents
 
