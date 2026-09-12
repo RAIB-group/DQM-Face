@@ -76,7 +76,7 @@ def get_attention_module(attention_type, in_features, reduction=32):
 # ============================================================
 
 class DQMPartialFC(nn.Module):
-    def __init__(self, embedding_size, num_classes, scale=64.0, m1=0.5, m2=0.2,
+    def __init__(self, embedding_size, num_classes, scale=64.0, m1=0.5, m2=0.12,
                  attention_type="dqmface", reduction=32, sample_rate=1.0):
         super(DQMPartialFC, self).__init__()
         self.u_m = 0.8  
@@ -266,7 +266,7 @@ def get_config(attention_type, dataset_path=None):
     config.attention_reduction = 64
 
     config.m1 = 0.5
-    config.m2 = 0.2
+    config.m2 = 0.12
 
     config.optimizer = "sgd"
     config.lr = 0.1               
@@ -497,11 +497,11 @@ def train(cfg, rank, local_rank, world_size):
         
         # Inter-class repulsion margin curriculum (matches paper Table 5)
         if epoch < 10:
-            current_m2 = 0.0
+            current_m2 = 0.05
         elif epoch < 18:
-            current_m2 = 0.1
+            current_m2 = 0.10
         else:
-            current_m2 = 0.2
+            current_m2 = 0.12
         
         module_fc.update_m2(current_m2)
         logging.info(f"Epoch {epoch}: Inter-class margin m2 set to {current_m2}")
